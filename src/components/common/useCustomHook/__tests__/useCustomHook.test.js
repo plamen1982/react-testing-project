@@ -22,7 +22,6 @@ describe('useCustomHook()', () => {
 // Custom hook example without helper function
 /*Key moments
  *1. The declaration of the let result is over the HookWrapper() which is a component wrapper so the rule of hooks to be followed: Hooks need to be called inside component, and we return null, since every component should return null, html or component
- *2. onCountChange is over the beforeEach and is passed as prop to the component, so every time before test() was run, the onCountChange will have a new mock
  **/
 
 // Custom hook example with helper function
