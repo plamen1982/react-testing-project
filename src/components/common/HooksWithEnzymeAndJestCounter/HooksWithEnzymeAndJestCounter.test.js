@@ -41,7 +41,7 @@ describe('HooksWithEnzymeAndJestCounter', () => {
 // Basic example
 /*Key moments - use for debugging purposes -> wrapper.debug() -> This will display the whole Component rendered
  *1. The declaration of the let wrapper is over the beforeEach() cycle, so can have global object and in the same time when every test() is run, to have new instance of the component in this wrapper
- *2. onCountChange is over the beforeEach and is passed as prop to the component, so every time before test() was run,  the test will have a new mock
+ *2. onCountChange is over the beforeEach and is passed as prop to the component, so every time before test() was run, the onCountChange will have a new mock
  *3. wrapper.find(html selector) -the find() (check https://airbnb.io/enzyme/docs/api/ShallowWrapper/find.html) function is coming from enzyme, and text() (check https://airbnb.io/enzyme/docs/api/ShallowWrapper/text.html) function is coming from enzyme
  *4. then we using the asserts(expects) that coming from Jest ( check https://jestjs.io/docs/en/expect )
  *5. Then just develop your logic needed for your component to work properly
