@@ -6,7 +6,7 @@ const HooksWithEnzymeAndJestCounter = ({ onCountChange = () => {} }) => {
 
   useEffect(() => {
     onCountChange(count);
-  });
+  }, [count]);
   return (
     <div>
       <Typography>Count: {count}</Typography>
