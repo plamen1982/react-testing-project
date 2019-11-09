@@ -49,7 +49,7 @@ describe('useCustomHook()', () => {
 
 // Custom hook example without helper function
 /*Key moments
- *1. We moving our code in custom function that we can reuse, it accept hook, and inside we have one more 
+ *1. We moving our code in custom function renderHook(), that we can reuse, it accept hook, and inside we have one more 
  time the HookWrapper component that is mount after that, and we return the results from our custom hook(in the example is hook())
  *2. When we checking if the count is the correct result everything is working, but if we causing state update we should use act
  import { act } from 'react-dom/test-utils'; and wrap the function that is causing state update in this case results.increment();
