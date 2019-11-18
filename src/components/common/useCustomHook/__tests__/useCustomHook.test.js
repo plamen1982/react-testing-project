@@ -21,7 +21,8 @@ describe('useCustomHook()', () => {
 
 // Custom hook example without helper function
 /*Key moments
- *1. The declaration of the let result is over the HookWrapper() which is a component wrapper so the rule of hooks to be followed: Hooks need to be called inside component, and we return null, since every component should return null, html or component
+ *1. The declaration of the let result is over the HookWrapper() which is a component wrapper so the rule of hooks to be followed:
+ * Hooks need to be called inside component, and we return null, since every component should return null, html or component
  **/
 
 // Custom hook example with helper function
@@ -29,13 +30,18 @@ describe('useCustomHook()', () => {
   let results;
   const renderHook = hook => {
     const HookWrapper = () => {
+      console.log('hookWrapper', new Date());
+
       results = hook();
+      console.log('after useCustomHook', new Date());
+
       return null;
     };
     mount(<HookWrapper />);
     return results;
   };
   test('the result from useCustom hook should be 0 by default, then after increment should be 1', () => {
+    console.log('before useCustomHook', new Date());
     renderHook(useCustomHook);
     expect(results.count).toEqual(0);
 

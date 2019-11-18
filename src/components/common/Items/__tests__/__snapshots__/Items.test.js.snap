@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Items /> <Items /> render default message 1`] = `
+<span
+  className="empty-message"
+>
+  No items in the list
+</span>
+`;
+
+exports[`<Items /> <Items /> render ul list with three items: one, two and three, 1`] = `
+<ul>
+  <li>
+    one
+  </li>
+  <li>
+    two
+  </li>
+  <li>
+    three
+  </li>
+</ul>
+`;
+
+exports[`<Items /> <Items />, rendered only with one item 1`] = `
+<span
+  className="empty-message"
+>
+  One item: 
+  one
+</span>
+`;
