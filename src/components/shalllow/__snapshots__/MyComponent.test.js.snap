@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow rendering with disappear| <MyComponent> mount rendering shallow |<MyComponent /> should click the button 1`] = `
+<Fragment>
+  <div>
+    My Component for shallow testing 
+  </div>
+  <div>
+    String 1: 
+    first
+  </div>
+  <button
+    id="my-button-one"
+    onClick={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  >
+    click
+  </button>
+</Fragment>
+`;
+
+exports[`shollow rendering | <MyComponent> shallow rendering shallow |<MyComponent /> 1`] = `
+<Fragment>
+  <div>
+    My Component for shallow testing 
+  </div>
+  <div>
+    String 1: 
+    first
+  </div>
+  <div>
+    String 2: 
+    second
+  </div>
+  <button
+    id="my-button-one"
+  >
+    click
+  </button>
+</Fragment>
+`;
